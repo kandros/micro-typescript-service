@@ -6,15 +6,30 @@
   "license": "MIT",
   "scripts": {
     "start": "node dist/server.js",
-    "build": "tsc"
+    "build": "tsc",
+    "test": "jest"
   },
   "dependencies": {
     "micro": "^7.3.3"
   },
   "devDependencies": {
+    "@types/jest": "^19.2.3",
     "@types/micro": "^7.3.0",
     "@types/node": "^7.0.22",
+    "jest": "^20.0.4",
+    "ts-jest": "^20.0.4",
     "tslint": "^5.3.2",
     "typescript": "^2.3.3"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
   }
 }
