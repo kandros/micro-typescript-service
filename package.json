@@ -1,0 +1,20 @@
+{
+  "name": "micro-typescript-service",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "jaga santagostino <jagasantagostino@gmail.com> (https://jagasantagostino.com)",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "micro": "^7.3.3"
+  },
+  "devDependencies": {
+    "@types/micro": "^7.3.0",
+    "@types/node": "^7.0.22",
+    "tslint": "^5.3.2",
+    "typescript": "^2.3.3"
+  }
+}
