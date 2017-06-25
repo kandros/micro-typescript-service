@@ -6,4 +6,5 @@ function requestHandler(req: IncomingMessage, res: ServerResponse) {
     res.end('ciaone!')
 }
 
-micro(requestHandler).listen(process.env.PORT || 3000)
+const PORT = process.env.PORT || 3000
+micro(requestHandler).listen(PORT, () => console.log(`listening on port ${PORT}`)
